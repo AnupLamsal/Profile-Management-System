@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const connectDB = require("./config/db");
+// const connectDB = require("./server");
 const path = require("path");
 
 require("dotenv").config();
@@ -10,7 +10,7 @@ const Auth = require("./routes/auth");
 const Profile = require("./routes/profile");
 const Post = require("./routes/post");
 
-connectDB();
+// connectDB();
 
 app.use(express.json());
 
